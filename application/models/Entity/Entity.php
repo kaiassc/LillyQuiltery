@@ -42,7 +42,8 @@ class Entity implements \JsonSerializable {
 	}
 	
 	/** 
-	 *  returns a comma-separated list of the each of the database fields of this object
+	 *  returns a comma-separated list of each of the database fields of this object
+	 * 
 	 *  @param string $prefix
 	 *  @param bool $shouldRenameField
 	 *  @param bool $asArray

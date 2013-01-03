@@ -24,10 +24,12 @@ class Error {
 	const ExistingEmail = 1209;
 	const UnverifiedAccount = 1210;
 
+	// SQL
 	const SQLUnknown = 1301;
 	const SQLInsert = 1302;
 	const SQLUpdate = 1303;
 	
+	// API
 	const APIInvalidField = 1401;
 	const APIConfig = 1402;
 	const APIInvalidType = 1403;
@@ -89,6 +91,8 @@ class Error {
 
 	/**
 	 * returns a description of the error including generic description and specific description (if any)
+	 * 
+	 * @param bool $withSpecifics decides whether or not to include detailed description in output
 	 * @return string
 	 */
 	public function getDescription($withSpecifics = FALSE) {
