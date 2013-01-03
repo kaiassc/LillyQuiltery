@@ -1,0 +1,161 @@
+<!--#include virtual="page.combined.css" -->
+<!--#include virtual="customizer.css" -->
+
+@font-face {
+    font-family: 'Ranchers';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ranchers'), local('Ranchers-Regular'), url(http://themes.googleusercontent.com/static/fonts/ranchers/v1/E34kymtaVEvz9DHCAGmTDvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+#tpTitle {
+    padding: 0;
+    margin: -4px 0 8px 0;
+}
+
+#tpTitle h2 {
+    font-size: 51px;
+    font-family: Ranchers, Arial, sans-serif;
+    font-weight: normal;
+    text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+    -moz-text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+    -webkit-text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+    padding: 0;
+    margin: 0;
+    color: #F0F0F0;
+    letter-spacing: 2px;
+    line-height: 51px;
+}
+
+#tpStats {
+    height: 228px;
+    text-shadow: 0 1px 0 white;
+    -moz-text-shadow: 0 1px 0 white;
+}
+#tpStats h5 {
+    background: url('../img/icon-stats.png') 0 -1px no-repeat;
+    margin: 20px 20px 10px 15px;
+    padding-left: 26px;
+}
+#tpStats table {
+    width: 140px;
+    margin: 0 12px 0 8px;
+    border-collapse: collapse;
+    
+}
+#tpStats td:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+#tpStats td:first-child + td {
+    font-size: 13px;
+}
+#statValue {
+    
+}
+#statDescriptor {
+    width: 73px;
+}
+
+#tpImageSlider {
+    height: 175px;
+    position: relative;
+}
+
+.tpImage {
+    position: absolute;
+    top: 0;
+    height: 175px;
+    width: 354px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.60), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.60), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.60), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -moz-transition: -moz-box-shadow 0.05s ease-out;
+    -webkit-transition: -webkit-box-shadow 0.05s ease-out;
+    transition: box-shadow 0.05s ease-out;
+}
+.tpImage:hover {
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.50), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.50), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.50), 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -moz-transition: -moz-box-shadow 0.05s ease-out;
+    -webkit-transition: -webkit-box-shadow 0.05s ease-out;
+    transition: box-shadow 0.05s ease-out;
+}
+
+#leftSliderArrow, #rightSliderArrow {    
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: url('../img/pack-image-arrow.png');
+    opacity: 0.40;
+    -moz-transition: opacity 0.05s ease-out;
+    -webkit-transition: opacity 0.05s ease-out;
+    transition: opacity 0.05s ease-out;
+}
+#leftSliderArrow {
+    left: 0;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#rightSliderArrow {
+    right: 0;
+}
+#leftSliderArrow:hover, #rightSliderArrow:hover {
+    cursor: pointer;
+    opacity: 0.50;
+    -moz-transition: opacity 0.05s ease-out;
+    -webkit-transition: opacity 0.05s ease-out;
+    transition: opacity 0.05s ease-out;
+}
+
+#tpToolbar {
+    text-align: center;
+    vertical-align: top;
+}
+#tpToolbar button {
+    height: 40px;
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+#leftWideSkyscraper {
+    
+}
+
+#tpContentTabs {
+    
+}
+    
+#tpContent {
+    margin-bottom: 0;
+}
+
+#tpChronicle {
+    min-height: 750px;
+    overflow: hidden;
+    border-top-left-radius: 0;
+}
+    #tpChronicle .text {
+        margin: 20px;
+    }
+    #tpChronicle img {
+        max-width: 688px;
+    }
+    #tpChronicle .horizontalLarge {
+        margin: 20px 0 20px 16px;
+    }
+
+
+#tpContentTabs li.ui-tabs-selected {
+    box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.60);
+}

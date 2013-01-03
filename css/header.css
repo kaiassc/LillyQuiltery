@@ -1,0 +1,427 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    background: url(../img/bg-fab.png) repeat fixed;
+    color: #202020;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 908px;
+}
+
+.tiled {
+    font-size: 0;
+    letter-spacing: -4px;
+    line-height: 0;
+}
+.tiled div {
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+h1, h2, h3, h4, h5, p {
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+h1 { 
+    font-size: 24px;
+    margin: 0;
+    padding: 5px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+    -moz-text-shadow: 0 1px 0 #FFFFFF;
+}
+h2 { font-size: 40px; }
+h3 { font-size: 30px; }
+h4 { font-size: 24px; }
+h5 { font-size: 19px; }
+
+#header {
+    background: #DDDDDD; /* old browsers */
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #DDDDDD 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#DDDDDD)); /* webkit */
+}
+
+#canvas {
+    
+}
+
+#footer {
+    height: 200px;
+}
+#footer .container {
+    height: inherit;
+    text-align: center;
+}
+
+p {
+    color: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #42A5B5;
+}
+a:hover {
+    
+}
+
+
+
+
+
+.leftTile {
+    width: 160px;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    vertical-align: top;
+}
+
+.mainTile {
+    margin: 0 0 20px 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 728px;
+}
+
+.fullCol {
+    width: inherit;
+}
+
+.leaderboard {
+    width: 728px;
+    height: 90px;
+}
+
+.wideSkyscraper {
+    width: 160px;
+    height: 600px;
+}
+
+.horizontalLarge {
+    width: 728px;
+    height: 15px;
+}
+
+.verticalMedium {
+    width: 160px;
+    height: 90px;
+}
+
+#headerContainer {
+    overflow: visible;
+}
+
+#title {
+    float: left;
+}
+
+#userMenu {
+    min-width: 100px;
+    display: table;
+    float: right;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #666666;
+    cursor: pointer;
+    position: relative;
+    overflow: auto;
+    z-index: 10000;
+}
+#userMenuDropdown {
+    cursor: default;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #666666;
+    display: table-cell;
+    position: absolute;
+    top: 40px;
+    left: -9999px;
+}
+#userMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#userMenu li {
+    margin-left: 10px;
+}
+#userMenu:hover #userMenuDropdown {
+    left: 0;
+}
+
+#userMenu h5 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+
+
+
+#nav ul {
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    /* Clear floats */
+    float:left;
+    width:100%;
+    position:relative;
+    z-index:5;
+}
+#nav li {
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+#nav a {
+    display:block;
+    padding:5px;
+    color:#fff;
+    background:#333;
+    text-decoration:none;
+}
+#nav a:hover {
+    color:#fff;
+    text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul ul {
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul ul li {
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+}
+#nav ul ul a {
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul { /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    text-decoration:underline;
+}
+#nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:#333;
+}
+
+
+
+
+#logo {
+    float: left;
+    height: 130px;
+    margin-top: 20px;
+}
+    #logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+#topLeaderboard {
+}
+    
+#nav {
+    margin: 0;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+    #nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+        #nav li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        #nav li.sel {
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            background: #DDDDDD; /* old browsers */
+            background: -moz-linear-gradient(top, #DDDDDD 0%, #F0F0F0 100%); /* firefox */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DDDDDD), color-stop(100%,#F0F0F0)); /* webkit */
+        }     
+            #nav li a {
+                color: #F0F0F0;
+                display: block;
+                text-align: center;
+                padding: 9px 20px 9px 44px;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                text-shadow: 2px 3px 5px #000000;
+                -moz-text-shadow: 2px 3px 5px #000000;
+            }
+            #nav li a:hover {
+                color: #42A5B5;
+            }
+            #nav li.sel a {
+                color: #202020;
+                text-shadow: 0 1px 0 #FFFFFF;
+                -moz-text-shadow: 0 1px 0 #FFFFFF;
+            }
+    #navHome {
+        
+    }
+    #navForum {
+        
+    }
+        #navHome a {
+            background: url('../img/icon-nav-home.png') 20px 8px no-repeat;
+        }
+        #navLearn a {
+            background: url('../img/icon-nav-learn.png') 18px 11px no-repeat;
+        }
+        #navPacks a {
+            background: url('../img/icon-nav-packs.png') 19px 8px no-repeat;
+        }
+        #navBrowse a {
+            background: url('../img/icon-nav-browse.png') 19px 9px no-repeat;
+        }
+        #navForum a {
+            background: url('../img/icon-nav-forum.png') 19px 8px no-repeat;
+        }
+        
+        #navHome.sel a {
+            background: url('../img/icon-nav-home-sel.png') 20px 8px no-repeat;
+        }
+        #navLearn.sel a {
+            background: url('../img/icon-nav-learn-sel.png') 18px 11px no-repeat;
+        }
+        #navPacks.sel a {
+            background: url('../img/icon-nav-packs-sel.png') 19px 8px no-repeat;
+        }
+        #navBrowse.sel a {
+            background: url('../img/icon-nav-browse-sel.png') 19px 9px no-repeat;
+        }
+        #navForum.sel a {
+            background: url('../img/icon-nav-forum-sel.png') 19px 8px no-repeat;
+        }
+
+button {
+    height: 34px;
+    letter-spacing: normal;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    background: #F0F0F0; /* old browsers */
+    background: -moz-linear-gradient(top, #F0F0F0 0%, #aeaeae 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#aeaeae)); /* webkit */
+
+    border: 1px solid #000000;
+    border-radius: 3px;
+
+    color: #353535;
+    text-shadow: 0px 1px 1px #e3e3e3;
+}
+button:hover {
+    background: #a8a8a8; /* old browsers */
+    background: -moz-linear-gradient(top, #a8a8a8 0%, #6e6e6e 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8a8a8), color-stop(100%, #6e6e6e)); /* webkit */
+    text-shadow: 0px 1px 1px #a3a3a3;
+}
+button:active {
+    background: #6e6e6e; /* old browsers */
+}
+
+.mcc-tabs .mcc-tabs-hide {
+    display: none;
+}
+    .mcc-tabs ul {
+        padding-left: 0;
+        margin: 0;
+        overflow-y: hidden;
+        position: relative;
+        z-index: 10000;
+    }
+        .mcc-tabs li {
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .mcc-tabs li.mcc-tabs-selected {
+            background-color: #F0F0F0;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+            .mcc-tabs li a {
+                display: block;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                color: #F0F0F0;
+                text-shadow: 2px 3px 5px #000000;
+                -moz-text-shadow: 2px 3px 5px #000000;
+            }
+            .mcc-tabs li a:hover {
+                color: #42A5B5;
+            }
+            .mcc-tabs li.mcc-tabs-selected a {
+                color: #202020;
+                text-shadow: 0 1px 0 #FFFFFF;
+                -moz-text-shadow: 0 1px 0 #FFFFFF;
+            }
+
+
+.board, .floater {
+    border-radius: 2px;
+}
+
+.board, .floater, #header, #footer, #nav li.sel {
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+}
+
+.board {
+    background: #F0F0F0; /* old browsers */
+    background: -moz-linear-gradient(top, #F0F0F0 0%, #DDDDDD 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#DDDDDD)); /* webkit */
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=password] {
+    border-radius: 3px;
+    border-color: #BBBBBB;
+    border-width: 1px;
+    margin: 0 0 20px 10px;
+    padding: 8px 6px;
+    font-size: 17px;
+    line-height: 1.3;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.10);
+}

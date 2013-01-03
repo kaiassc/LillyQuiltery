@@ -1,0 +1,50 @@
+<!--#include virtual="page.combined.css" -->
+
+#mainContent {
+    font-size: 0;
+    letter-spacing: -4px;
+    line-height: 0;
+}
+#mainContent div {
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+#register {
+    display: inline-block;
+    vertical-align: top;
+    width: 354px;
+    margin: 0 20px 20px 0;
+    height: 600px;
+}
+
+#login {
+    display: inline-block;
+    vertical-align: top;
+    width: 354px;
+    margin: 0 0 20px 0;
+    height: 600px;
+}
+
+#register div:first-child, #login div:first-child {
+    margin: 20px;
+}
+
+label, h2 {
+    text-shadow: 0 1px 0 #FFFFFF;
+    -moz-text-shadow: 0 1px 0 #FFFFFF;
+}
+label.required:after {
+    content: '*';
+}
+
+form {
+    text-align: right;
+}
+
+input[type=text],
+input[type=password] {
+    width: 173px;
+}
