@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brad Walker -- @Bramamine
+    Brandon Lilly -- @Kaiassc
+
+# THANKS
+
+    Andre Jolicouer
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    PHP, CodeIgniter, Doctrine
+    MySQL
