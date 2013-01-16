@@ -7,13 +7,6 @@ require_once('application/core/PageController.php');
 
 class User_Controller extends PageController {
 
-	/* @var \Doctrine $doctrine */
-	public $doctrine;
-
-	/* @var \Format $format */
-	public $format;
-
-	
 	/* @var \Entity\User $user */
 	public $user;
 	
@@ -22,8 +15,6 @@ class User_Controller extends PageController {
 		parent::__construct();
 
 		$this->load->helper('url');
-
-		$this->format = $this->getFormat();
 	}
 	
 	public function index($userID = NULL, $usernameTitle = NULL) {
