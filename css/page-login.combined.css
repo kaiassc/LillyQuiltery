@@ -15,15 +15,15 @@
 #register {
     display: inline-block;
     vertical-align: top;
-    width: 354px;
-    margin: 0 20px 20px 0;
+    width: 493px;
+    margin: 0 0 20px 0;
     height: 600px;
 }
 
 #login {
     display: inline-block;
     vertical-align: top;
-    width: 354px;
+    width: 493px;
     margin: 0 0 20px 0;
     height: 600px;
 }

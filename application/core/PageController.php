@@ -12,11 +12,11 @@ class PageController extends Controller {
 	
 	/* @var string $title */
 	public $title;
-
+	
 	
 	/* @var \Render $render */
 	public $render;
-
+	
 	/* @var \Format $format */
 	public $format;
 	
@@ -36,7 +36,7 @@ class PageController extends Controller {
 		}
 		$this->pageName = $pageName;
 		
-		$this->title = 'Minecraft Customizer';
+		$this->title = 'Lilly Quiltery';
 		
 		$this->render = $this->getRender();
 		$this->format = $this->getFormat();

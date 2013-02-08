@@ -83,8 +83,8 @@ class Api_v1_Controller extends RESTController {
 		'suppress_http_status_codes' => TRUE
 	);
 		
-	const ErrorMessageCommunication = 'There was a communication error with Minecraft Customizer';
-	const ReportErrorEmail = 'bramamine@minecraftcustomizer.net';
+	const ErrorMessageCommunication =   'There was a communication error with Lilly Quiltery';
+	const ReportErrorEmail =            'support@lillyquiltery.net';
 	
 	protected $suppressHTTPStatusCodes = FALSE;
 	
@@ -94,7 +94,7 @@ class Api_v1_Controller extends RESTController {
 		$tableAbbrv = $className::$TABLE_ABBREVIATION;
 		$result = NULL;
 		$isSingleResult = FALSE;
-
+		
 		$suppressHTTPStatusCodes = trim(strtolower($this->input->get('suppress_http_status_codes')));
 		$this->suppressHTTPStatusCodes = $suppressHTTPStatusCodes === 'true' || $suppressHTTPStatusCodes === '1';
 		
@@ -109,7 +109,7 @@ class Api_v1_Controller extends RESTController {
 				}
 			}
 		}
-				
+			
 		$pdo = $this->getPDO();
 		
 		$fields = $this->getFields($this->input->get('fields'));
@@ -117,11 +117,11 @@ class Api_v1_Controller extends RESTController {
 		
 		// merge the required fields with explicit fields for query formatting reasons (the fields that are only required will be unset from the result after it is retrieved)
 		$mergedFields = array_merge($fields, $requiredFields);
-				
+		
 		if (count($mergedFields) > 0) {
 			$joins = $this->getJoins($mergedFields);
 			$fieldsString = $className::getFieldsString($mergedFields);
-
+			
 			// if object ID is specified manually in the URL (packs/4477 VS packs?param=value)
 			// only one object will be returned
 			if (isset($id)) {

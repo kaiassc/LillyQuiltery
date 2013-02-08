@@ -1,7 +1,8 @@
 <!--#include virtual="page.combined.js" -->
 
 $(function() {
-
+    
+    /*
     $.ajax({
         type: "PUT",
         dataType: "json",
@@ -10,5 +11,6 @@ $(function() {
             console.log(JSON.stringify(data));
         }
     });
+    */
     
 });

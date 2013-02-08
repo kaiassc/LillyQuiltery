@@ -5,7 +5,13 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-    background: url(../img/bg-fab.png) repeat fixed;
+    /**background: url("../img/bg-fab 2.png") repeat fixed;/**/
+	
+    background: #F4F2E3; /* old browsers */
+    background: -moz-linear-gradient(top, #EDE7D7 0%, #F4F2E3 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDE7D7), color-stop(100%,#F4F2E3)); /* webkit */
+	
+	background-color: #F4F2E3;
     color: #202020;
 }
 
@@ -16,7 +22,7 @@ div {
 
 .container {
     margin: 0 auto;
-    width: 908px;
+    width: 990px;
 }
 
 .tiled {
@@ -39,8 +45,6 @@ h1 {
     font-size: 24px;
     margin: 0;
     padding: 5px 0;
-    text-shadow: 0 1px 0 #FFFFFF;
-    -moz-text-shadow: 0 1px 0 #FFFFFF;
 }
 h2 { font-size: 40px; }
 h3 { font-size: 30px; }
@@ -48,9 +52,7 @@ h4 { font-size: 24px; }
 h5 { font-size: 19px; }
 
 #header {
-    background: #DDDDDD; /* old browsers */
-    background: -moz-linear-gradient(top, #FAFAFA 0%, #DDDDDD 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#DDDDDD)); /* webkit */
+	
 }
 
 #canvas {
@@ -92,15 +94,32 @@ a:hover {
 }
 
 .mainTile {
-    margin: 0 0 20px 0;
-    display: inline-block;
-    vertical-align: top;
-    width: 728px;
+    background-color: #fff; 
+	border: 1px solid #D8D9CC; 
+	border-color: #E6E7D9 #D8D9CC transparent #D8D9CC; 
+	width: 990px; 
+	margin: 0 auto;
+}
+
+.innerPadding {
+	margin: 25px 40px 225px 40px; 
+}
+
+.fullTile {
+	padding: 25px 40px 225px 40px; 
+	width: 990px; 
+	margin: 0 auto; 
+	*zoom: 1;
 }
 
 .fullCol {
     width: inherit;
 }
+
+.halfWide {
+	width: 493px;
+}
+
 
 .leaderboard {
     width: 728px;
@@ -123,7 +142,12 @@ a:hover {
 }
 
 #headerContainer {
+	margin: 20px auto 0 auto;
     overflow: visible;
+}
+
+#topBar {
+	padding-top: 20px;
 }
 
 #title {
@@ -131,26 +155,29 @@ a:hover {
 }
 
 #userMenu {
-    min-width: 100px;
+    min-width: 120px;
     display: table;
     float: right;
-    height: 40px;
-    padding: 0 10px;
-    background-color: #666666;
+    height: 30px;
+    padding: 0 15px;
+    background-color: #ffffff;
     cursor: pointer;
     position: relative;
     overflow: auto;
     z-index: 10000;
+	margin: 20px 0 0 0;
+	border: 1px solid #D8D9CC; 
 }
 #userMenuDropdown {
     cursor: default;
     width: 100%;
     padding: 10px 0;
-    background-color: #666666;
+	margin: 0 auto;
     display: table-cell;
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: -9999px;
+	border: 1px solid #D8D9CC; 
 }
 #userMenu ul {
     list-style: none;
@@ -161,13 +188,15 @@ a:hover {
     margin-left: 10px;
 }
 #userMenu:hover #userMenuDropdown {
-    left: 0;
+    left: -1px;
 }
 
 #userMenu h5 {
     display: table-cell;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 14px;
+	/**font-family: Lucida-Grande sans-serif;/**/
+	color: #888888;
 }
 
 
@@ -190,15 +219,14 @@ a:hover {
 }
 #nav a {
     display:block;
-    padding:5px;
     color:#fff;
-    background:#333;
     text-decoration:none;
 }
 #nav a:hover {
     color:#fff;
     text-decoration:underline;
 }
+
 
 /*--- DROPDOWN ---*/
 #nav ul ul {
@@ -219,7 +247,7 @@ a:hover {
     left:0; /* Bring back on-screen when needed */
 }
 #nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    text-decoration:underline;
+    text-decoration:none;
 }
 #nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
     text-decoration:none;
@@ -232,9 +260,10 @@ a:hover {
 
 
 #logo {
-    float: left;
-    height: 130px;
-    margin-top: 20px;
+    float:left;
+	margin: 0 20px 5px 10px;
+	overflow:visible;
+	height:50px;
 }
     #logo img {
         display: block;
@@ -242,12 +271,12 @@ a:hover {
     }
 
 #topLeaderboard {
+	
 }
     
 #nav {
     margin: 0;
-    padding-bottom: 20px;
-    overflow: hidden;
+    float:left;
 }
     #nav ul {
         list-style: none;
@@ -256,35 +285,28 @@ a:hover {
     }
         #nav li {
             display: inline-block;
-            margin: 0;
-            padding: 0;
+            margin: 0 15px 0 15px;
+            padding: 0 5px 3px 5px;
         }
         #nav li.sel {
-            border-bottom-left-radius: 2px;
-            border-bottom-right-radius: 2px;
-            background: #DDDDDD; /* old browsers */
-            background: -moz-linear-gradient(top, #DDDDDD 0%, #F0F0F0 100%); /* firefox */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DDDDDD), color-stop(100%,#F0F0F0)); /* webkit */
+	        
         }     
             #nav li a {
-                color: #F0F0F0;
+                color: rgba(109, 35, 45, 0.82);
                 display: block;
                 text-align: center;
-                padding: 9px 20px 9px 44px;
-                margin: 0;
-                font-family: Arial, sans-serif;
-                font-size: 18px;
-                font-weight: bold;
-                text-shadow: 2px 3px 5px #000000;
-                -moz-text-shadow: 2px 3px 5px #000000;
+                margin: 20px 0 0 0;
+                /**/font-family: Lucida-Grande sans-serif;/**/
+                font-size: 16px;
+	            padding: 5px 0 2px 0;
             }
             #nav li a:hover {
+	            /**/border-bottom: 2px #42A5B5 solid;/**/
                 color: #42A5B5;
             }
             #nav li.sel a {
-                color: #202020;
-                text-shadow: 0 1px 0 #FFFFFF;
-                -moz-text-shadow: 0 1px 0 #FFFFFF;
+                color: rgba(109, 35, 45, 0.82);
+	            /**/border-bottom: 2px rgba(109, 35, 45, 0.82) solid;/**/
             }
     #navHome {
         
@@ -292,37 +314,7 @@ a:hover {
     #navForum {
         
     }
-        #navHome a {
-            background: url('../img/icon-nav-home.png') 20px 8px no-repeat;
-        }
-        #navLearn a {
-            background: url('../img/icon-nav-learn.png') 18px 11px no-repeat;
-        }
-        #navPacks a {
-            background: url('../img/icon-nav-packs.png') 19px 8px no-repeat;
-        }
-        #navBrowse a {
-            background: url('../img/icon-nav-browse.png') 19px 9px no-repeat;
-        }
-        #navForum a {
-            background: url('../img/icon-nav-forum.png') 19px 8px no-repeat;
-        }
-        
-        #navHome.sel a {
-            background: url('../img/icon-nav-home-sel.png') 20px 8px no-repeat;
-        }
-        #navLearn.sel a {
-            background: url('../img/icon-nav-learn-sel.png') 18px 11px no-repeat;
-        }
-        #navPacks.sel a {
-            background: url('../img/icon-nav-packs-sel.png') 19px 8px no-repeat;
-        }
-        #navBrowse.sel a {
-            background: url('../img/icon-nav-browse-sel.png') 19px 9px no-repeat;
-        }
-        #navForum.sel a {
-            background: url('../img/icon-nav-forum-sel.png') 19px 8px no-repeat;
-        }
+
 
 button {
     height: 34px;
@@ -351,61 +343,47 @@ button:active {
     background: #6e6e6e; /* old browsers */
 }
 
-.mcc-tabs .mcc-tabs-hide {
-    display: none;
-}
-    .mcc-tabs ul {
-        padding-left: 0;
-        margin: 0;
-        overflow-y: hidden;
-        position: relative;
-        z-index: 10000;
-    }
-        .mcc-tabs li {
-            margin: 0;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .mcc-tabs li.mcc-tabs-selected {
-            background-color: #F0F0F0;
-            border-top-left-radius: 2px;
-            border-top-right-radius: 2px;
-        }
-            .mcc-tabs li a {
-                display: block;
-                padding: 10px 20px;
-                cursor: pointer;
-                font-size: 18px;
-                font-weight: bold;
-                color: #F0F0F0;
-                text-shadow: 2px 3px 5px #000000;
-                -moz-text-shadow: 2px 3px 5px #000000;
-            }
-            .mcc-tabs li a:hover {
-                color: #42A5B5;
-            }
-            .mcc-tabs li.mcc-tabs-selected a {
-                color: #202020;
-                text-shadow: 0 1px 0 #FFFFFF;
-                -moz-text-shadow: 0 1px 0 #FFFFFF;
-            }
-
 
 .board, .floater {
-    border-radius: 2px;
+    /*border-radius: 2px;*/
+	
 }
 
-.board, .floater, #header, #footer, #nav li.sel {
-    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
-    -moz-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
-    -webkit-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+.board, .floater {
+	-webkit-box-shadow: inset 0 0 8px #e8e9dC;
+    -moz-box-shadow: inset 0 0 8px #e8e9dC;
+    box-shadow: inset 0 0 8px #e8e9dC;    
+	
+    /*box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+    /*-moz-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);
+    /*-webkit-box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.80);*/
 }
 
 .board {
-    background: #F0F0F0; /* old browsers */
-    background: -moz-linear-gradient(top, #F0F0F0 0%, #DDDDDD 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#DDDDDD)); /* webkit */
+    background-color: #fff; 
+	border: 1px solid #D8D9CC; 
+	border-color: #E6E7D9 #D8D9CC transparent #D8D9CC; 
+	/**padding: 25px 40px 225px 40px;/**/ 
 }
+
+.innerGlow {
+    -webkit-box-shadow: inset 0 0 10px #e8e9dC;
+    -moz-box-shadow: inset 0 0 10px #e8e9dC;
+    box-shadow: inset 0 0 10px #e8e9dC;
+}
+
+/**  // FamilyHistory
+#main { 
+	background-color: #fff; 
+	border: 1px solid #D8D9CC; 
+	border-color: #E6E7D9 #D8D9CC transparent #D8D9CC; 
+	padding: 25px 40px 225px 40px; 
+	width: 900px; 
+	margin: 0 auto; 
+	*zoom: 1;
+}
+/**/
+
 
 label {
     font-size: 14px;
