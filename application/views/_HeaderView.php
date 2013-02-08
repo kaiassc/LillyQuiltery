@@ -32,16 +32,6 @@
 		            <li id="navBrowse"<?=$this->pageName=='browse'?' class="sel"':''?>><a href="browse">Browse</a>
 		            <li id="navLearn"<?=$this->pageName=='learn'?' class="sel"':''?>><a href="learn">Learn</a>
 		            <li id="navContact"<?=$this->pageName=='contact'?' class="sel"':''?>><a href="contact">Contact</a>
-		            <?/*
-	                <li id="navPacks"<?=$this->pageName=='pack'?' class="sel"':''?>><a href="pack/62/jolicraft">Packs</a>
-	                    <ul>
-	                        <li><a href="">Super Home</a>
-	                        <li><a href="">Gay Home</a>
-	                        <li><a href="">Lovely Home</a>
-	                    </ul>
-	                
-	                <li id="navForum"<?=$this->pageName=='forum'?' class="sel"':''?>><a href="forum">Forum</a>
-		            */?>
 	            </ul>
 	        </div>
 			
