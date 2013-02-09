@@ -27,15 +27,16 @@ class Set_Controller extends PageController {
 
 		if (isset($bundleID) && is_numeric($bundleID) && intval($bundleID) == $bundleID) {
 			if ($bundleID > 0) {
+				
 				// fetch bundle
-
-				$bundleStmt = $pdo->prepare(sprintf('SELECT %s FROM Bundle b WHERE b.ID = :id',
+				$bundleStmt = $pdo->prepare(sprintf('SELECT %s FROM Bundle b WHERE b.IsEnabled = 1 AND b.ID = :id',
 					\Entity\Bundle::getAllFields('b')
 				));
 				$bundleSuccess = $bundleStmt->execute(array(
 					':id' => $bundleID
 				));
 
+				// error checking
 				if (!$bundleSuccess) {
 					die(implode(' ', $bundleStmt->errorInfo()));
 				}
@@ -63,6 +64,26 @@ class Set_Controller extends PageController {
 					die();
 				}
 				
+				// patterns
+				$patternsStmt = $pdo->prepare(sprintf('SELECT %s FROM Pattern p INNER JOIN Bundle_Pattern b_p ON p.ID = b_p.PatternID WHERE p.IsEnabled = 1 AND b_p.BundleID = :id',
+					\Entity\Pattern::getAllFields('p')
+				));
+				$patternsSuccess = $patternsStmt->execute(array(
+					':id' => $bundleID
+				));
+
+				// error checking
+				if (!$patternsSuccess) {
+					die(implode(' ', $patternsStmt->errorInfo()));
+				}
+
+				$patternsResults = $patternsStmt->fetchAll(PDO::FETCH_ASSOC);
+
+				foreach ($patternsResults as $patternArray) {
+					$bundle->addPattern(\Entity\Pattern::buildFromArray($patternArray));
+				}
+
+
 				$this->bundle = $bundle;
 			}
 		}

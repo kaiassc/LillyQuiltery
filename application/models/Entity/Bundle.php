@@ -21,6 +21,9 @@ class Bundle extends Entity {
     /** @var bool $IsEnabled */
     protected $IsEnabled;
 	
+	
+	protected $_patterns;
+	
     
     /**
      * Get ID
@@ -90,4 +93,26 @@ class Bundle extends Entity {
     public function getIsEnabled() {
         return $this->IsEnabled;
     }
+
+
+	/**
+	 * Add pattern
+	 *
+	 * @param Pattern $pattern
+	 *
+	 * @return Bundle
+	 */
+	public function addPattern(Pattern $pattern) {
+		$this->_patterns[$pattern->getID()] = $pattern;
+		return $this;
+	}
+
+	/**
+	 * Get patterns
+	 *
+	 * @return array
+	 */
+	public function getPatterns() {
+		return $this->_patterns;
+	}
 }

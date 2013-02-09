@@ -30,11 +30,14 @@
 			<div>
 				When you buy this set, you gain access to these patterns:
 				<div>
+					<ul>
 					<?php
-					
-					
+					foreach ($this->bundle->getPatterns() as $pattern) {
+						echo "<li>{$pattern->getName()}";
+					}
 					?>
-                </div>
+                    </ul>
+				</div>
 			</div>
 		</div>
 	</div>
