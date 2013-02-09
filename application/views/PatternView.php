@@ -26,6 +26,18 @@
 					LillyQuiltery is still under construction and has not yet been linked to paypal. In the interim, you can purchase patterns by emailing me at lillyquiltery@hotmail.com
                 </div>
 			</div>
+			
+			<?php if (count($this->pattern->getBundles()) > 0): ?>
+			<ul>
+				<?php 
+					/** @var \Entity\Bundle $bundle */
+					foreach ($this->pattern->getBundles() as $bundle) {
+						echo "<li>{$bundle->getName()}";
+					}
+				?>
+			</ul>
+			<?php endif; ?>
+			
 		</div>
 	</div>
 	
