@@ -59,6 +59,17 @@ class Resource extends Library {
 	}
 	
 	/**
+	 * returns an array of the Bundles's display image paths
+	 * @param \Entity\Bundle $bundle 
+	 * @return array
+	 */
+	public function bundleDisplayImagePaths($bundle) {
+		$formattedBundleID = $this->format->titleForURL($bundle->getName());
+		
+		return glob("data/B/{$bundle->getID()}/D/{$formattedBundleID}-display-*.png");
+	}
+	
+	/**
 	 * returns a User's avatar image path (ex. 'data/User/USER_ID/USERNAME-avatar.png')
 	 * @param \Entity\User $user instance of a User loaded via Doctrine
 	 * @return string

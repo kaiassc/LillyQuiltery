@@ -4,7 +4,8 @@
     <div id="footer">
         <div class="container">
 	        <br/><br/>
-	        © 2013 Lilly Quiltery
+	        © 2013 Lilly Quiltery<br/>
+	        Contact: lillyquiltery@hotmail.com
         </div>
     </div>
 	    

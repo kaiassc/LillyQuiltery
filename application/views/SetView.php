@@ -7,7 +7,7 @@
 				<div>
 		            <?php
 		            
-		            //$displayPaths = $this->resource->patternDisplayImagePaths($this->bundle);
+		            $displayPaths = $this->resource->bundleDisplayImagePaths($this->bundle);
 		            
 		            if( !empty($displayPaths) ){
 		                echo "<img src=\"$displayPaths[0]\"/>";
@@ -24,6 +24,16 @@
 					<span id="patternPrice">$<?=$this->bundle->getPrice()?></span><br/>
 					
 					LillyQuiltery is still under construction and has not yet been linked to paypal. In the interim, you can purchase patterns by emailing me at lillyquiltery@hotmail.com
+                </div>
+			</div>
+			
+			<div>
+				When you buy this set, you gain access to these patterns:
+				<div>
+					<?php
+					
+					
+					?>
                 </div>
 			</div>
 		</div>
