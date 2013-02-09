@@ -51,7 +51,7 @@ class Entity implements \JsonSerializable {
 	 * */
 	public static function getAllFields($prefix = NULL, $shouldRenameField = FALSE, $asArray = FALSE) {
 		$className = get_called_class();
-		
+
 		if (!isset($className::$_propertyNames)) {
 			$reflectionClass = new \ReflectionClass($className);
 			$defaultProperties = $reflectionClass->getDefaultProperties();
@@ -70,14 +70,14 @@ class Entity implements \JsonSerializable {
 		else {
 			$pre = '';
 		}
-		
+
 		$fields = array();
 		foreach ($className::$_propertyNames as $propertyName) {
 			$as = strlen($pre) > 0 && $shouldRenameField ? ' AS '.$prefix.$propertyName : '';
 
 			$fields[$propertyName] = $pre.$propertyName.$as;
 		}
-
+		
 		return $asArray ? $fields : implode(',', $fields);
 	}
 	
