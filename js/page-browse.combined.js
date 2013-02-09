@@ -12,7 +12,7 @@ $(function() {
         'limit' : 15,
         'orderBy' : orderBySelector.val()
     };
-    $.extend(browsePatternQuery, getSelectionsFromMultiselector(filterSelector));
+    //$.extend(browsePatternQuery, getSelectionsFromMultiselector(filterSelector));
     
     
     
@@ -29,6 +29,7 @@ $(function() {
     }
 
     function refreshResult() {
+        console.log("fresh1");
         var browsePatternTemplate = jQuery.template(null, '<!--#include virtual="templates/BrowsePattern.html" -->');
         var queryString = implodeQueryObject(browsePatternQuery);
         
@@ -69,13 +70,17 @@ $(function() {
                 resultNav.html(pageNumberLinks);
                 
                 resultList.html("");
-                $.tmpl(browsePatternTemplate, data.response).appendTo(resultList);
+                $.tmpl(browsePatternTemplate, data.response).appendTo(resultList);  
+            },
+            error: function(hr, textStatus, errorThrown) {
+                alert(errorThrown);
             }
         });
         
         console.log(queryString);
         
         var filterString = "";
+        /*
         $("option:selected", filterSelector).each(function() {
             var name = $(this).html();
 
@@ -85,6 +90,7 @@ $(function() {
 
             filterString += encodeURIComponent(name).replace(/\%20/g, "+");
         });
+        */
         
         var orderBy = orderBySelector.find("option:selected").html();
         
@@ -143,6 +149,12 @@ $(function() {
         return queryString;
     }
     
+    
+    
+    
+    
+    
+    /**
     filterSelector.chosen({
         allow_single_deselect : true,
         no_results_text : "No filters matching",
@@ -163,6 +175,7 @@ $(function() {
             
             refreshResult();
         });
+    /**/
     
     orderBySelector.chosen({
         disable_search : true

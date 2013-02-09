@@ -1,23 +1,26 @@
 
 
 /* Pattern Shop/Account Item */
+div.pItem_container {
+    height:260px;
+    float:left;
+    display:inline-block;
+    margin:10px 8px;
+}
+
 div.pItem_wrap {
 	height:auto;
 	width:174px;
 	box-shadow:#ccc 0 0 6px;
 	border-radius:5px;
 	background-color:#FAFAF8;
-	display:inline-block;
-	float:left;
-	margin:10px;
+    display:inline-block;
 }
-	div.pItem_wrap:hover{
-		box-shadow:#999 0 0 6px;
-		border-radius:5px;
-		background-color:#FAFAF8;
-		display:inline-block;
-		float:left;
-	}
+div.pItem_wrap:hover{
+    box-shadow:#999 0 0 6px;
+    border-radius:5px;
+    background-color:#FAFAF8;
+}
 	div.pItem_imgwrap {
 		background-color:#FFF;
 		margin:0 0 2px 0;
@@ -50,7 +53,7 @@ div.pItem_wrap {
 				max-height:170px;
 				max-width:170px;
 				width:expression(this.width > 170 ? 170 : true);
-				height:expression(this.height > 170 ? 170 : true);
+				height:expression(this.height > 170 ? 170 : truwe);
 				border:0;
 				margin:10px auto 10px auto;
 			}
@@ -61,6 +64,9 @@ div.pItem_wrap {
 		color:#383639;
 		text-align:center;
 		display:block;
+        border-bottom: 1px solid #dfdfef;
+        padding-bottom: 5px;
+        margin: 0 0 15px 0;
 	}
 		div.pItem_price a {
 			color:#383639;

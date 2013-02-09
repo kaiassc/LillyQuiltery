@@ -242,8 +242,8 @@ class Api_v1_Controller extends RESTController {
 				$response['meta']['count'] = $count;
 			}
 			
-			var_dump($response['response'][0]);
-			die();
+			//var_dump($response['response'][0]);
+			//die();
 			
 			$formattedResponse = $this->input->get('callback') ? $this->input->get('callback').'('.json_encode($response).')' : json_encode($response);
 			
@@ -974,8 +974,8 @@ class Api_v1_Controller extends RESTController {
 		$fields = $this->getFields($definedFields);
 		$requiredFields = $this->getRequiredFields($fields);
 		
-		var_dump($fields);
-		die();
+		//var_dump($fields);
+		//die();
 
 		// merge the required fields with explicit fields for query formatting reasons (the fields that are only required will be unset from the result after it is retrieved)
 		$mergedFields = array_merge($fields, $requiredFields);

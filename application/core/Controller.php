@@ -139,7 +139,7 @@ class Controller extends \CI_Controller {
 	 */
 	public function getPDO() {
 		if (!isset($this->_pdo)) {
-			$this->_pdo = new PDO('mysql:dbname=mcc;host=walker.dlinkddns.com', 'admin', 'kek-hap-dog0369');
+			$this->_pdo = new PDO('mysql:dbname=lq;host=walker.dlinkddns.com', 'admin', 'kek-hap-dog0369');
 		}
 		return $this->_pdo;
 	}

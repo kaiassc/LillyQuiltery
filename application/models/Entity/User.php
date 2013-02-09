@@ -12,9 +12,6 @@ class User extends Entity {
     /** @var int $ID */
     protected $ID;
 
-	/** @var int $UserRankID */
-	protected $UserRankID;
-	
     /** @var string $username */
     protected $Username;
 
@@ -32,43 +29,15 @@ class User extends Entity {
 
 	/** @var string $VerificationHash */
 	protected $VerificationHash;
-	
-    /** @var bool $packLimit */
-    protected $PackLimit;
 
     /** @var bool $IsVerified */
     protected $IsVerified;
-
-    /** @var bool $isPremium */
-    protected $IsPremium;
-
-    /** @var bool $hasAppPackUpdates */
-    protected $HasAppPackUpdates;
-
-    /** @var bool $hasAppSiteUpdates */
-    protected $HasAppSiteUpdates;
-
-    /** @var bool $hasAppYellowText */
-    protected $HasAppYellowText;
-
-    /** @var bool $hasAppBrowseDetailed */
-    protected $HasAppBrowseDetailed;
 
     /** @var int $creationDate */
     protected $CreationDate;
 
     /** @var int $editDate */
     protected $EditDate;
-	
-	
-    /** @var array $_texturePackPermissions */
-	protected $_texturePackPermissions;
-
-	/** @var array $_texturePacks */
-	protected $_texturePacks;
-
-	/** @var array $_favoritePacks */
-	protected $_favoritePacks;
 	
 	
     /**
@@ -79,26 +48,6 @@ class User extends Entity {
     public function getID() {
         return $this->ID;
     }
-
-	/**
-	 * Set userRankID
-	 *
-	 * @param int $userRankID
-	 * @return User
-	 */
-	public function setUserRankID($userRankID) {
-		$this->UserRankID = intval($userRankID);
-		return $this;
-	}
-
-	/**
-	 * Get userRankID
-	 *
-	 * @return int
-	 */
-	public function getUserRankID() {
-		return $this->UserRankID;
-	}
 
 	/**
      * Set username
@@ -219,26 +168,6 @@ class User extends Entity {
 	public function getVerificationHash() {
 		return $this->VerificationHash;
 	}
-	
-    /**
-     * Set packLimit
-     *
-     * @param bool $packLimit
-     * @return User
-     */
-    public function setPackLimit($packLimit) {
-        $this->PackLimit = $packLimit;
-        return $this;
-    }
-
-    /**
-     * Get packLimit
-     *
-     * @return bool 
-     */
-    public function getPackLimit() {
-        return $this->PackLimit;
-    }
 
     /**
      * Set isVerified
@@ -258,106 +187,6 @@ class User extends Entity {
      */
     public function getIsVerified() {
         return $this->IsVerified;
-    }
-
-    /**
-     * Set isPremium
-     *
-     * @param bool $isPremium
-     * @return User
-     */
-    public function setIsPremium($isPremium) {
-        $this->IsPremium = $isPremium == TRUE;
-        return $this;
-    }
-
-    /**
-     * Get isPremium
-     *
-     * @return bool 
-     */
-    public function getIsPremium() {
-        return $this->IsPremium;
-    }
-
-    /**
-     * Set hasAppPackUpdates
-     *
-     * @param bool $hasAppPackUpdates
-     * @return User
-     */
-    public function setHasAppPackUpdates($hasAppPackUpdates) {
-        $this->HasAppPackUpdates = $hasAppPackUpdates == TRUE;
-        return $this;
-    }
-
-    /**
-     * Get hasAppPackUpdates
-     *
-     * @return bool 
-     */
-    public function getHasAppPackUpdates() {
-        return $this->HasAppPackUpdates;
-    }
-
-    /**
-     * Set hasAppSiteUpdates
-     *
-     * @param bool $hasAppSiteUpdates
-     * @return User
-     */
-    public function setHasAppSiteUpdates($hasAppSiteUpdates) {
-        $this->HasAppSiteUpdates = $hasAppSiteUpdates == TRUE;
-        return $this;
-    }
-
-    /**
-     * Get hasAppSiteUpdates
-     *
-     * @return bool 
-     */
-    public function getHasAppSiteUpdates() {
-        return $this->HasAppSiteUpdates;
-    }
-
-    /**
-     * Set hasAppYellowText
-     *
-     * @param bool $hasAppYellowText
-     * @return User
-     */
-    public function setHasAppYellowText($hasAppYellowText) {
-        $this->HasAppYellowText = $hasAppYellowText == TRUE;
-        return $this;
-    }
-
-    /**
-     * Get hasAppYellowText
-     *
-     * @return bool 
-     */
-    public function getHasAppYellowText() {
-        return $this->HasAppYellowText;
-    }
-
-    /**
-     * Set hasAppBrowseDetailed
-     *
-     * @param bool $hasAppBrowseDetailed
-     * @return User
-     */
-    public function setHasAppBrowseDetailed($hasAppBrowseDetailed) {
-        $this->HasAppBrowseDetailed = $hasAppBrowseDetailed == TRUE;
-        return $this;
-    }
-
-    /**
-     * Get hasAppBrowseDetailed
-     *
-     * @return bool 
-     */
-    public function getHasAppBrowseDetailed() {
-        return $this->HasAppBrowseDetailed;
     }
 
     /**
@@ -399,62 +228,4 @@ class User extends Entity {
     public function getEditDate() {
         return $this->EditDate;
     }
-
-	/**
-	 * Get texturePackPermissions
-	 * 
-	 * @return array
-	 */
-	public function getTexturePackPermissions() {
-		return $this->_texturePackPermissions;
-	}
-	
-	/**
-	 * Add texturePackPermission
-	 * 
-	 * @param TexturePack $texturePack
-	 * @param Permission $permission
-	 * @return User
-	 */
-	public function addTexturePackPermission($texturePack, $permission) {
-		$this->_texturePackPermissions[$texturePack->getID()][$permission->getCode()] = $permission;
-	}
-
-	/**
-	 * Get texturePacks
-	 *
-	 * @return array
-	 */
-	public function getTexturePacks() {
-		return $this->_texturePacks;
-	}
-
-	/**
-	 * Add texturePack
-	 *
-	 * @param TexturePack $texturePack
-	 * @return User
-	 */
-	public function addTexturePack($texturePack) {
-		$this->_texturePacks[$texturePack->getID()] = $texturePack;
-	}
-
-	/**
-	 * Get favoritePackEntries
-	 *
-	 * @return array
-	 */
-	public function getFavoritePacks() {
-		return $this->_favoritePacks;
-	}
-
-	/**
-	 * Add favoritePack
-	 *
-	 * @param User_TexturePack_favorite $favoritePack
-	 * @return User
-	 */
-	public function addFavoritePack($favoritePack) {
-		$this->_favoritePacks[$favoritePack->getTexturePackID()] = $favoritePack;
-	}
 }

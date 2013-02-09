@@ -64,7 +64,7 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 			)
 		),*/
 		'img' => array(
-			'function' => 'getImg',
+			'function' => 'getThumbImg',
 			'requiredFields' => array(
 				'id',
 				'name'
@@ -179,11 +179,19 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 		$this->load->helper('url');
 	}
 
-	protected static function getImg($controller, $packAsArray) {	
-		return base_url($controller->getResource()->texturePackBrowsableImagePathFromProperties($packAsArray['id'], $packAsArray['name']));
+	/** 
+	 * @param Controller $controller 
+	 * @param array $patternAsArray
+	 */
+	protected static function getThumbImg($controller, $patternAsArray) {	
+		return base_url($controller->getResource()->patternBrowsableImagePathFromProperties($patternAsArray['id'], $patternAsArray['name']));
 	}
 
-	protected static function getURL($controller, $packAsArray) {
-		return base_url($controller->getFormat()->texturePackURLFromProperties($packAsArray['id'], $packAsArray['name']));
+	/**
+	 * @param Controller $controller
+	 * @param array $patternAsArray
+	 */
+	protected static function getURL($controller, $patternAsArray) {
+		return base_url($controller->getFormat()->patternURLFromProperties($patternAsArray['id'], $patternAsArray['name']));
 	}
 }

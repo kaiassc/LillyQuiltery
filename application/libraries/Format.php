@@ -21,27 +21,27 @@ class Format extends Library {
 
 	/**
 	 * returns the URL to the specified texture pack
-	 * @param \Entity\TexturePack $texturePack
+	 * @param \Entity\Pattern $pattern
 	 * @return string
 	 */
-	public function texturePackURL(\Entity\TexturePack $texturePack) {
-		return $this->texturePackURLFromProperties($texturePack->getID(), $texturePack->getName());
+	public function patternURL(\Entity\Pattern $pattern) {
+		return $this->patternURLFromProperties($pattern->getID(), $pattern->getName());
 	}
 
 	/**
-	 * returns the URL to the specified texture pack
-	 * @param int $packID pack id
-	 * @param string $packName pack name
+	 * returns the URL to the specified pattern
+	 * @param int $patternID 
+	 * @param string $patternName
 	 * @return string
 	 */
-	public function texturePackURLFromProperties($packID, $packName) {
-		$formattedPackName = $this->titleForURL($packName);
+	public function patternURLFromProperties($patternID, $patternName) {
+		$formattedPatternName = $this->titleForURL($patternName);
 		
-		if ($packID === 1) {
-			return "pack/{$formattedPackName}";
+		if ($patternID === 1) {
+			return "pattern/{$formattedPatternName}";
 		}
 		else {
-			return "pack/{$packID}/{$formattedPackName}";
+			return "pattern/{$patternID}/{$formattedPatternName}";
 		}
 	}
 

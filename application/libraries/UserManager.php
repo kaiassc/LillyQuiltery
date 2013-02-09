@@ -10,8 +10,6 @@ if (!defined('BASEPATH'))
 require_once('application/libraries/Library.php');
 require_once('application/objects/Error.php');
 require_once('application/models/Entity/User.php');
-require_once('application/models/Entity/TexturePack.php');
-require_once('application/models/Entity/User_TexturePack_favorite.php');
 
 class UserManager extends Library {
 

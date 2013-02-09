@@ -1,5 +1,6 @@
 <!--#include virtual="page.combined.css" -->
 <!--#include virtual="vendor/chosen.css" -->
+<!--#include virtual="pattern.css" -->
 
 #filters {
     padding: 20px 0;
@@ -59,7 +60,8 @@ h5 {
 }
 
 #resultList {
-    margin: 20px 20px 0 20px;
+    min-height: 950px;
+    margin: 20px 20px 20px 20px;
     text-align: center;
 }
     

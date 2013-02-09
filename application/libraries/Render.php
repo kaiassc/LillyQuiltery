@@ -9,13 +9,7 @@ if (!defined('BASEPATH'))
 
 
 require_once('application/libraries/Library.php');
-require_once('application/models/Entity/TexturePack.php');
-require_once('application/models/Entity/GameVersion.php');
-require_once('application/models/Entity/GameResolution.php');
-require_once('application/models/Entity/CustomizerSection.php');
-require_once('application/models/Entity/CustomizerPicker.php');
-require_once('application/models/Entity/TextureDefinition.php');
-require_once('application/models/Entity/Texture.php');
+require_once('application/models/Entity/Pattern.php');
 
 class Render extends Library {
 	
