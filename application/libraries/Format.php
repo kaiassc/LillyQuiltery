@@ -27,6 +27,9 @@ class Format extends Library {
 	public function patternURL(\Entity\Pattern $pattern) {
 		return $this->patternURLFromProperties($pattern->getID(), $pattern->getName());
 	}
+	
+	
+
 
 	/**
 	 * returns the URL to the specified pattern
@@ -45,6 +48,38 @@ class Format extends Library {
 		}
 	}
 
+
+
+	/**
+	 * returns the URL to the specified texture pack
+	 * @param \Entity\Bundle $bundle
+	 * @return string
+	 */
+	public function bundleURL(\Entity\Bundle $bundle) {
+		return $this->bundleURLFromProperties($bundle->getID(), $bundle->getName());
+	}
+	
+	/**
+	 * returns the URL to the specified pattern
+	 * @param int $bundleID 
+	 * @param string $bundleName
+	 * @return string
+	 */
+	public function bundleURLFromProperties($bundleID, $bundleName) {
+		$formattedBundleName = $this->titleForURL($bundleName);
+		
+		if ($bundleID === 1) {
+			return "set/{$formattedBundleName}";
+		}
+		else {
+			return "set/{$bundleID}/{$formattedBundleName}";
+		}
+	}
+	
+	public function formatPatternID($id){
+		return "#".str_pad($id, 4, "0", STR_PAD_LEFT);
+	}
+	
 	/**
 	 * returns the resolution from the path string of an image
 	 * @param string $displayImagePath the image path

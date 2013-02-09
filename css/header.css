@@ -65,6 +65,8 @@ h5 { font-size: 19px; }
 #footer .container {
     height: inherit;
     text-align: center;
+    font-size: 11px;
+    color:#aeaeae;
 }
 
 p {

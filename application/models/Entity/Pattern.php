@@ -1,50 +1,50 @@
 <?php
 
-namespace Entity; 
+namespace Entity;
 
 require_once('application/models/Entity/Entity.php');
 
 class Pattern extends Entity {
 
 	protected static $_propertyNames;
-	
-	
-    /** @var int $ID */
-    protected $ID;
+
+
+	/** @var int $ID */
+	protected $ID;
 
 	/** @var int $PatternTypeID */
 	protected $PatternTypeID;
 
 	/** @var int $UserID */
 	protected $UserID;
-	
-    /** @var string $Name */
-    protected $Name;
 
-    /** @var string $Description */
-    protected $Description;
+	/** @var string $Name */
+	protected $Name;
 
-    /** @var float $Price */
-    protected $Price;
+	/** @var string $Description */
+	protected $Description;
 
-    /** @var bool $IsEnabled */
-    protected $IsEnabled;
+	/** @var float $Price */
+	protected $Price;
 
-    /** @var int $CreationDate */
-    protected $CreationDate;
+	/** @var bool $IsEnabled */
+	protected $IsEnabled;
 
-    /** @var int $EditDate */
-    protected $EditDate;
-	
-    
-    /**
-     * Get ID
-     *
-     * @return int 
-     */
-    public function getID() {
-        return $this->ID;
-    }
+	/** @var int $CreationDate */
+	protected $CreationDate;
+
+	/** @var int $EditDate */
+	protected $EditDate;
+
+
+	/**
+	 * Get ID
+	 *
+	 * @return int
+	 */
+	public function getID() {
+		return $this->ID;
+	}
 
 	/**
 	 * Set patternTypeID
@@ -85,124 +85,124 @@ class Pattern extends Entity {
 	public function getUserID() {
 		return $this->UserID;
 	}
-	
-    /**
-     * Set name
-     *
-     * @param string $name
-     * @return Pattern
-     */
-    public function setName($name) {
-        $this->Name = $name;
-        return $this;
-    }
 
-    /**
-     * Get name
-     *
-     * @return string 
-     */
-    public function getName() {
-        return $this->Name;
-    }
+	/**
+	 * Set name
+	 *
+	 * @param string $name
+	 * @return Pattern
+	 */
+	public function setName($name) {
+		$this->Name = $name;
+		return $this;
+	}
 
-    /**
-     * Set description
-     *
-     * @param string $description
-     * @return Pattern
-     */
-    public function setDescription($description) {
-        $this->Description = $description;
-        return $this;
-    }
+	/**
+	 * Get name
+	 *
+	 * @return string
+	 */
+	public function getName() {
+		return $this->Name;
+	}
 
-    /**
-     * Get description
-     *
-     * @return string 
-     */
-    public function getDescription() {
-        return $this->Description;
-    }
+	/**
+	 * Set description
+	 *
+	 * @param string $description
+	 * @return Pattern
+	 */
+	public function setDescription($description) {
+		$this->Description = $description;
+		return $this;
+	}
 
-    /**
-     * Set price
-     *
-     * @param float $price
-     * @return Pattern
-     */
-    public function setPrice($price) {
-        $this->Price = $price;
-        return $this;
-    }
+	/**
+	 * Get description
+	 *
+	 * @return string
+	 */
+	public function getDescription() {
+		return $this->Description;
+	}
 
-    /**
-     * Get price
-     *
-     * @return int 
-     */
-    public function getPrice() {
-        return $this->Price;
-    }
+	/**
+	 * Set price
+	 *
+	 * @param float $price
+	 * @return Pattern
+	 */
+	public function setPrice($price) {
+		$this->Price = $price;
+		return $this;
+	}
 
-    /**
-     * Set isEnabled
-     *
-     * @param bool $isEnabled
-     * @return Pattern
-     */
-    public function setIsEnabled($isEnabled) {
-        $this->IsEnabled = $isEnabled == TRUE;
-        return $this;
-    }
+	/**
+	 * Get price
+	 *
+	 * @return int
+	 */
+	public function getPrice() {
+		return $this->Price;
+	}
 
-    /**
-     * Get isEnabled
-     *
-     * @return bool 
-     */
-    public function getIsEnabled() {
-        return $this->IsEnabled;
-    }
+	/**
+	 * Set isEnabled
+	 *
+	 * @param bool $isEnabled
+	 * @return Pattern
+	 */
+	public function setIsEnabled($isEnabled) {
+		$this->IsEnabled = $isEnabled == TRUE;
+		return $this;
+	}
 
-    /**
-     * Set creationDate
-     *
-     * @param int $creationDate
-     * @return Pattern
-     */
-    public function setCreationDate($creationDate) {
-        $this->CreationDate = $creationDate;
-        return $this;
-    }
+	/**
+	 * Get isEnabled
+	 *
+	 * @return bool
+	 */
+	public function getIsEnabled() {
+		return $this->IsEnabled;
+	}
 
-    /**
-     * Get creationDate
-     *
-     * @return int 
-     */
-    public function getCreationDate() {
-        return $this->CreationDate;
-    }
+	/**
+	 * Set creationDate
+	 *
+	 * @param int $creationDate
+	 * @return Pattern
+	 */
+	public function setCreationDate($creationDate) {
+		$this->CreationDate = $creationDate;
+		return $this;
+	}
 
-    /**
-     * Set editDate
-     *
-     * @param int $editDate
-     * @return Pattern
-     */
-    public function setEditDate($editDate) {
-        $this->EditDate = $editDate;
-        return $this;
-    }
+	/**
+	 * Get creationDate
+	 *
+	 * @return int
+	 */
+	public function getCreationDate() {
+		return $this->CreationDate;
+	}
 
-    /**
-     * Get editDate
-     *
-     * @return int 
-     */
-    public function getEditDate() {
-        return $this->EditDate;
-    }
+	/**
+	 * Set editDate
+	 *
+	 * @param int $editDate
+	 * @return Pattern
+	 */
+	public function setEditDate($editDate) {
+		$this->EditDate = $editDate;
+		return $this;
+	}
+
+	/**
+	 * Get editDate
+	 *
+	 * @return int
+	 */
+	public function getEditDate() {
+		return $this->EditDate;
+	}
 }

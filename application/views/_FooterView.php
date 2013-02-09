@@ -1,9 +1,10 @@
 		</div>	
 	</div> <!-- end of #canvas -->
 
-    <div id="footer" class="board">
+    <div id="footer">
         <div class="container">
-	        <p>Footer</p>
+	        <br/><br/>
+	        © 2013 Lilly Quiltery
         </div>
     </div>
 	    

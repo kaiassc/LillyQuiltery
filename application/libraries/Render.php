@@ -10,6 +10,7 @@ if (!defined('BASEPATH'))
 
 require_once('application/libraries/Library.php');
 require_once('application/models/Entity/Pattern.php');
+require_once('application/models/Entity/Bundle.php');
 
 class Render extends Library {
 	

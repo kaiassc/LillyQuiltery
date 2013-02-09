@@ -43,8 +43,19 @@ class Resource extends Library {
 	 */
 	public function patternBrowsableImagePathFromProperties($patternID, $patternName) {
 		$formattedPatternID = $this->format->titleForURL($patternName);
-
+		
 		return "data/P/{$patternID}/{$formattedPatternID}-pattern-thumbnail.png";
+	}
+	
+	/**
+	 * returns an array of the Pattern's display image paths
+	 * @param \Entity\Pattern $pattern 
+	 * @return array
+	 */
+	public function patternDisplayImagePaths($pattern) {
+		$formattedPatternID = $this->format->titleForURL($pattern->getName());
+		
+		return glob("data/P/{$pattern->getID()}/D/{$formattedPatternID}-pattern-display-*.png");
 	}
 	
 	/**
