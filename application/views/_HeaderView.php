@@ -30,8 +30,8 @@
 	        <div id="nav" class="">
 	            <ul>
 		            <li id="navBrowse"<?=$this->pageName=='browse'?' class="sel"':''?>><a href="browse">Browse</a>
-		            <li id="navLearn"<?=$this->pageName=='learn'?' class="sel"':''?>><a href="learn">Learn</a>
-		            <li id="navContact"<?=$this->pageName=='contact'?' class="sel"':''?>><a href="contact">Contact</a>
+		            <!--li id="navLearn"<?=$this->pageName=='learn'?' class="sel"':''?>><a href="learn">Learn</a>
+		            <li id="navContact"<?=$this->pageName=='contact'?' class="sel"':''?>><a href="contact">Contact</a-->
 	            </ul>
 	        </div>
 			

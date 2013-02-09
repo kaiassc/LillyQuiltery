@@ -23,20 +23,26 @@
 					<span id="patternID">Item <?=$this->format->formatPatternID($this->pattern->getID())?></span><br/>
 					<span id="patternPrice">$<?=$this->pattern->getPrice()?></span><br/>
 					
-					LillyQuiltery is still under construction and has not yet been linked to paypal. In the interim, you can purchase patterns by emailing me at lillyquiltery@hotmail.com
+					LillyQuiltery is still under construction and has not yet been linked to paypal. Until then, you can purchase patterns by emailing Jill at lillyquiltery@hotmail.com
+	                
+	                <br/><br/><br/><br/>
+
+	                <?php if (count($this->pattern->getBundles()) > 0): ?>
+                    This pattern is part of the:
+                    <ul>
+		                <?php
+		                /** @var \Entity\Bundle $bundle */
+		                foreach ($this->pattern->getBundles() as $bundle) {
+			                echo "<li><a href='{$this->format->bundleURL($bundle)}'>{$bundle->getName()}</a>";
+		                }
+		                ?>
+                    </ul>
+	                <?php endif; ?>
+	                
                 </div>
 			</div>
 			
-			<?php if (count($this->pattern->getBundles()) > 0): ?>
-			<ul>
-				<?php 
-					/** @var \Entity\Bundle $bundle */
-					foreach ($this->pattern->getBundles() as $bundle) {
-						echo "<li>{$bundle->getName()}";
-					}
-				?>
-			</ul>
-			<?php endif; ?>
+
 			
 		</div>
 	</div>

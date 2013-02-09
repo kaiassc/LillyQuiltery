@@ -44,3 +44,19 @@
     color:red;
     line-height: 40px;
 }
+
+
+#subpatternsWrap {
+    margin:20px 0 0 0;
+    width:auto;
+    display: block;
+}
+
+#subpatternsWrap p {
+    color:#42A5B5;
+}
+
+#subpatternsWrap.div{
+    width:auto;
+    display: block;
+}

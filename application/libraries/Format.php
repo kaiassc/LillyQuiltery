@@ -40,12 +40,7 @@ class Format extends Library {
 	public function patternURLFromProperties($patternID, $patternName) {
 		$formattedPatternName = $this->titleForURL($patternName);
 		
-		if ($patternID === 1) {
-			return "pattern/{$formattedPatternName}";
-		}
-		else {
-			return "pattern/{$patternID}/{$formattedPatternName}";
-		}
+		return "pattern/{$patternID}/{$formattedPatternName}";
 	}
 
 
@@ -68,12 +63,7 @@ class Format extends Library {
 	public function bundleURLFromProperties($bundleID, $bundleName) {
 		$formattedBundleName = $this->titleForURL($bundleName);
 		
-		if ($bundleID === 1) {
-			return "set/{$formattedBundleName}";
-		}
-		else {
-			return "set/{$bundleID}/{$formattedBundleName}";
-		}
+		return "set/{$bundleID}/{$formattedBundleName}";
 	}
 	
 	public function formatPatternID($id){
