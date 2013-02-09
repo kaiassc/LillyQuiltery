@@ -27,12 +27,13 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 			'field' => "Price",
 			"type" => 'float',
 		),
-		
-		
-		/*'creator' => array(
-			'field' => 'UserID',
-			'foreignAPI' => 'Users'
+		'type' => array(
+			'field' => 'PatternTypeID',
+			'foreignAPI' => 'PatternTypes'
 		),
+		
+		
+		/*
 		'dl' => array(
 			'field' => 'DownloadCount',
 			'type' => 'int'
@@ -90,7 +91,10 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 			'field' => 'Name',
 			'type' => 'string'
 		),
-		
+		'type' => array(
+			'field' => 'PatternTypeID',
+			'type' => 'int'
+		)
 		
 		
 		/*
@@ -126,7 +130,6 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 		'name' => array(
 			'field' => 'Name'
 		),
-		
 		'price' => array(
 			'field' => 'Price'
 		),
@@ -152,12 +155,12 @@ class Api_v1_Patterns_Controller extends Api_v1_Controller {
 			'field' => 'Name',
 			'type' => 'string'
 		),
+		'type' => array(
+			'field' => 'PatternID',
+			'type' => 'int'
+		)
 		
 		/*
-		'creator' => array(
-			'field' => 'UserID',
-			'type' => 'int'
-		),
 		'dl' => array(
 			'field' => 'DownloadCount',
 			'type' => 'int'

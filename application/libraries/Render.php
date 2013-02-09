@@ -254,6 +254,15 @@ class Render extends Library {
 	
 	public function browseFilterSelector($selectedFilterNames = NULL, $attributes = NULL) {
 		$pdo = $this->currentController->getPDO();
+
+		// config
+		$browseFilterGroups = array(
+			array(
+				'label' => 'Type',
+				'field' => 'type',
+				'items' => $pdo->query('SELECT ID, Name FROM PatternType')->fetchAll(PDO::FETCH_ASSOC)
+			)
+		);
 		
 		$attributes['class'] = 'browseFilterSelector'.(isset($attributes) && isset($attributes['class']) ? ' '.trim($attributes['class']) : '');
 		if (!isset($attributes['data-placeholder'])) {
@@ -262,28 +271,7 @@ class Render extends Library {
 		if (!isset($attributes['multiple'])) {
 			$attributes['multiple'] = 'multiple';
 		}
-		$attributeString = $this->getAttributeString($attributes);
-		
-		// config
-		$browseFilterGroups = array(
-			array(
-				'label' => 'Resolution',
-				'field' => 'res',
-				'items' => $pdo->query('SELECT ID, Name FROM GameResolution WHERE IsEnabled = 1 ORDER BY Ordinal')->fetchAll(PDO::FETCH_ASSOC)
-			),
-			array(
-				'label' => 'Minecraft Version',
-				'field' => 'ver',
-				'items' => $pdo->query('SELECT ID, Name FROM GameVersion WHERE IsEnabled = 1 ORDER BY Ordinal')->fetchAll(PDO::FETCH_ASSOC)
-			),
-			array(
-				'label' => 'Mod Support',
-				'field' => 'modID',
-				'items' => $pdo->query('SELECT ID, Name FROM `Mod` WHERE IsEnabled = 1 ORDER BY Ordinal')->fetchAll(PDO::FETCH_ASSOC),
-				'isExclusive' => TRUE
-			)
-		);
-		
+		$attributeString = $this->getAttributeString($attributes);	
 		
 		$html = "<select{$attributeString}>";
 
@@ -320,14 +308,32 @@ class Render extends Library {
 	}
 
 
-	public function browseOrderBySelector($attributes = NULL) {
+	public function browseOrderBySelector($selectedName, $attributes = NULL) {
+		// config
+		$orderByOptions = array(
+			'dl:DESC' => 'Most downloaded',
+			'name:ASC' => 'Name',
+			'price:DESC' => 'Highest price',
+			'price:ASC' => 'Lowest price',
+			'date:DESC' => 'Newest',
+			'date:ASC' => 'Oldest'
+		);
+		
+		$selectedName = str_replace('+', ' ', $selectedName);
+
 		$attributes['class'] = 'browseOrderBySelector'.(isset($attributes) && isset($attributes['class']) ? ' '.trim($attributes['class']) : '');
 		$attributeString = $this->getAttributeString($attributes);
 
 		$html = "<select{$attributeString}>";
-		
-		$html .= '<option value="dl:DESC">Most downloaded';
-		$html .= '<option value="name">Name';
+
+		foreach ($orderByOptions as $value=>$label) {
+			$optionAttributes = array('value' => $value);
+			if ($selectedName == $label) {
+				$optionAttributes['selected'] = 'selected';
+			}
+			$optionAttributeString = $this->getAttributeString($optionAttributes);
+			$html .= "<option{$optionAttributeString}>{$label}";
+		}
 
 		$html .= '</select>';
 

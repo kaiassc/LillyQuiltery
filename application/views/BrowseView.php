@@ -8,7 +8,11 @@
 <div id="filters" class="mainTile board">
     <h5>Filters:</h5>
 
-	<?= $this->render->browseOrderBySelector(array(
+	<?= $this->render->browseFilterSelector($this->selectedFilterNames, array(
+		'id' => 'filterSelector'
+	)) ?>
+	
+	<?= $this->render->browseOrderBySelector($this->selectedOrderByName, array(
 		'id' => 'orderBySelector'
 	)) ?>
 </div>

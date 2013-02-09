@@ -1,18 +1,28 @@
 <!--#include virtual="page.combined.js" --><!--#include virtual="vendor/jquery.tmpl.min.js" --><!--#include virtual="vendor/chosen.jquery.min.js" --><!--#include virtual="vendor/jquery.query.min.js" -->
 $(function() {
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+    }
+    
     // pre init
     var filterSelector = $("#filterSelector");
     var orderBySelector = $("#orderBySelector");
     var resultList = $("#resultList");
     var resultNav = $("#resultNav");
 
+    var pageSize = 15;
+    var page = getURLParameter("page");
+    if (!page) {
+        page = 1;
+    }
+        
     var browsePatternQuery = {
         'fields' : "id,name,price,url,img",
-        'offset' : 0,
-        'limit' : 15,
+        'offset' : pageSize * (page - 1),
+        'limit' : pageSize,
         'orderBy' : orderBySelector.val()
     };
-    //$.extend(browsePatternQuery, getSelectionsFromMultiselector(filterSelector));
+    $.extend(browsePatternQuery, getSelectionsFromMultiselector(filterSelector));    
     
     
     
@@ -29,7 +39,6 @@ $(function() {
     }
 
     function refreshResult() {
-        console.log("fresh1");
         var browsePatternTemplate = jQuery.template(null, '<!--#include virtual="templates/BrowsePattern.html" -->');
         var queryString = implodeQueryObject(browsePatternQuery);
         
@@ -71,16 +80,12 @@ $(function() {
                 
                 resultList.html("");
                 $.tmpl(browsePatternTemplate, data.response).appendTo(resultList);  
-            },
-            error: function(hr, textStatus, errorThrown) {
-                alert(errorThrown);
             }
         });
         
         console.log(queryString);
         
-        var filterString = "";
-        /*
+        var filterString = "";        
         $("option:selected", filterSelector).each(function() {
             var name = $(this).html();
 
@@ -90,7 +95,6 @@ $(function() {
 
             filterString += encodeURIComponent(name).replace(/\%20/g, "+");
         });
-        */
         
         var orderBy = orderBySelector.find("option:selected").html();
         
@@ -99,6 +103,7 @@ $(function() {
             newURL += "filters=" + filterString + "&";
         }
         newURL += "order=" + encodeURIComponent(orderBy).replace("%20", "+");
+        newURL += "&page=" + ((browsePatternQuery.offset / browsePatternQuery.limit) + 1);
         
         window.history.replaceState(browsePatternQuery, "Browse", newURL);
     }
@@ -154,7 +159,7 @@ $(function() {
     
     
     
-    /**
+    
     filterSelector.chosen({
         allow_single_deselect : true,
         no_results_text : "No filters matching",
@@ -175,7 +180,6 @@ $(function() {
             
             refreshResult();
         });
-    /**/
     
     orderBySelector.chosen({
         disable_search : true
