@@ -53,7 +53,7 @@ div.pItem_wrap:hover{
 				max-height:170px;
 				max-width:170px;
 				width:expression(this.width > 170 ? 170 : true);
-				height:expression(this.height > 170 ? 170 : truwe);
+				height:expression(this.height > 170 ? 170 : true);
 				border:0;
 				margin:10px auto 10px auto;
 			}

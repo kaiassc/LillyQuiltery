@@ -80,6 +80,10 @@
 # Proper MIME type for all files
 # ----------------------------------------------------------------------
 
+# PHP
+#   Use this line to use PHP 5.4.X instead of the default 5.3.X (server only, doesn't work locally)
+# AddType application/x-httpd-php54 .php
+
 # JavaScript
 #   Normalize to standard type (it's sniffed in IE anyways)
 #   tools.ietf.org/html/rfc4329#section-7.2
@@ -441,7 +445,7 @@ Options -MultiViews
 # You can add custom pages to handle 500 or 403 pretty easily, if you like.
 # If you are hosting your site in subdirectory, adjust this accordingly
 #    e.g. ErrorDocument 404 /subdir/404.html
-ErrorDocument 404 /lq/404.html
+ErrorDocument 404 404.html
 
 # ----------------------------------------------------------------------
 # UTF-8 encoding

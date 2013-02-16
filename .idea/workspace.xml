@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e586ea5-e833-4d0b-9d07-2007b527112b" name="Default" comment="more patterns">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/10/D/Lilies-Scalloped-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/1/D/Cindy-Tulip-Flower-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/3/D/Lori-Day-and-Night-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/4/D/Retro-Paisley-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/5/D/Retro-Paisley-Swirl-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/6/D/Retro-Paisley-Combined-Superset-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/7/D/Log-Cabin-Watermelon-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/8/D/Marian-Flower-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/B/9/D/Enchanted-Garden-Set-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/13/D/Evane-Frame-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/38/D/Triangle-in-a-Square-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/49/D/Retro-Paisley-Rectangular-1-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/51/D/Retro-Paisley-Swirl-1-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/72/D/Enchanted-Garden-E2E-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/78/D/Feather-Blade-2-for-Pinwheel-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/92/D/Lilies-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/92/Lilies-pattern-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/93/D/Lilies-Scalloped-Leaves-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/93/Lilies-Scalloped-Leaves-pattern-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/94/D/Lilies-POP-pattern-display-00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/P/94/Lilies-POP-pattern-thumbnail.png" />
+    <list default="true" id="2e586ea5-e833-4d0b-9d07-2007b527112b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Format.php" afterPath="$PROJECT_DIR$/application/libraries/Format.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/PatternView.php" afterPath="$PROJECT_DIR$/application/views/PatternView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/SetView.php" afterPath="$PROJECT_DIR$/application/views/SetView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/_HeaderView.php" afterPath="$PROJECT_DIR$/application/views/_HeaderView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page-set.combined.css" afterPath="$PROJECT_DIR$/css/page-set.combined.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pattern.css" afterPath="$PROJECT_DIR$/css/pattern.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/page-pattern.combined.js" afterPath="$PROJECT_DIR$/js/page-pattern.combined.js" />
+      <change type="MOVED" beforePath="R:\WAMP\www\lq\application\controllers\api\v1\Api_v1_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
+      <change type="MOVED" beforePath="R:\WAMP\www\lq\application\controllers\api\v1\Api_v1_PatternTypes_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" />
+      <change type="MOVED" beforePath="R:\WAMP\www\lq\application\controllers\api\v1\Api_v1_Patterns_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" />
+      <change type="MOVED" beforePath="R:\WAMP\www\lq\application\controllers\api\v1\Api_v1_Users_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" />
     </list>
     <ignored path="lq.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,110 +31,114 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Favorites">
+      <favorite_root url="file://$PROJECT_DIR$/application/views/_HeaderView.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/application/views/_HeaderView.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Pattern_Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Pattern_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="61" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Set_Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Set_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="61" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Format.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/libraries/Format.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="62" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1360443762000" expanded="false" signature="4600:4627" placeholder="..." />
-                <marker date="1360443762000" expanded="false" signature="4658:4688" placeholder="..." />
-                <marker date="1360443762000" expanded="false" signature="4864:4880" placeholder="..." />
-                <marker date="1360443762000" expanded="false" signature="4911:4921" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatternView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/PatternView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/SetView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="24" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1360445844000" expanded="true" signature="1365:1941" placeholder="..." />
-                <marker date="1360445844000" expanded="true" signature="1397:1928" placeholder="..." />
-                <marker date="1360445844000" expanded="true" signature="1456:1671" placeholder="..." />
-                <marker date="1360445844000" expanded="true" signature="1493:1658" placeholder="..." />
-                <marker date="1360445844000" expanded="true" signature="1530:1642" placeholder="..." />
-                <marker date="1360445844000" expanded="true" signature="1704:1914" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page-set.combined.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/page-set.combined.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="18" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrowsePattern.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/templates/BrowsePattern.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/libraries/Resource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="7" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeView.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/HomeView.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1360438146000" expanded="true" signature="72:524" placeholder="..." />
-                <marker date="1360438146000" expanded="true" signature="101:516" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_HeaderView.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_HeaderView.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/_HeaderView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="45" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.45687646">
+            <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="3128" selection-end="3274" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api_V1_Controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="669" column="43" selection-start="23771" selection-end="23771" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Api_V1_Patterns_Controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="78" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browse_Controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Browse_Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="1" selection-start="0" selection-end="643" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrowseView.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/BrowseView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="30" selection-start="0" selection-end="691" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Render.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/libraries/Render.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="45" selection-start="4652" selection-end="4652" vertical-scroll-proportion="0.6057692">
+              <folding>
+                <marker date="1360438318000" expanded="true" signature="1093:1367" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="1124:1259" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="1633:1908" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="1664:1799" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="2138:2411" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="2169:2303" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="2637:2910" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="2668:2802" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="3133:3406" placeholder="..." />
+                <marker date="1360438318000" expanded="true" signature="3164:3298" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-pattern.combined.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/page-pattern.combined.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-pattern.combined.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/page-pattern.combined.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="15" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pattern.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/pattern.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="24" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1360557976000" expanded="true" signature="986:1015" placeholder="{...}" />
+                <marker date="1360557976000" expanded="true" signature="1040:1070" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,13 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/models/Entity/Pattern.php" />
-        <option value="$PROJECT_DIR$/js/page-pattern.combined.js" />
-        <option value="$PROJECT_DIR$/css/page-pattern.combined.css" />
-        <option value="$PROJECT_DIR$/application/controllers/Pattern_Controller.php" />
-        <option value="$PROJECT_DIR$/application/models/Entity/Bundle.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Set_Controller.php" />
-        <option value="$PROJECT_DIR$/css/header.css" />
         <option value="$PROJECT_DIR$/application/views/_FooterView.php" />
         <option value="$PROJECT_DIR$/application/views/HomeView.php" />
         <option value="$PROJECT_DIR$/application/libraries/Render.php" />
@@ -182,16 +165,23 @@
         <option value="$PROJECT_DIR$/css/page-set.combined.css" />
         <option value="$PROJECT_DIR$/application/views/SetView.php" />
         <option value="$PROJECT_DIR$/application/views/PatternView.php" />
+        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" />
+        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" />
+        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" />
+        <option value="$PROJECT_DIR$/js/page-pattern.combined.js" />
+        <option value="$PROJECT_DIR$/css/pattern.css" />
         <option value="$PROJECT_DIR$/application/views/_HeaderView.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="45" />
+    <option name="y" value="135" />
+    <option name="width" value="1104" />
+    <option name="height" value="895" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -219,7 +209,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,7 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,8 +363,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lq" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,16 +399,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="editor.preferences.completion" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mcc" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="R:\WAMP\www\lq\application\controllers\api\v1" />
       <recent name="R:\WAMP\www\lq\application\views" />
       <recent name="R:\WAMP\www\lq\application\models\Entity" />
       <recent name="R:\WAMP\www\lq\js" />
       <recent name="R:\WAMP\www\lq\css" />
-      <recent name="C:\Wamp\www\lq\application\controllers\api\v1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="R:\WAMP\www\lq\img" />
@@ -406,14 +422,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -475,18 +491,43 @@
       <created>1360440316381</created>
       <updated>1360440316381</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="more patterns and bundles, pattern and bundle view work, learn and contact tabs removed. ready for upload to site?">
+      <created>1360448748712</created>
+      <updated>1360448748712</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="45" y="135" width="1104" height="895" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32789117" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23425826" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31957772" sideWeight="0.6721088" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -496,7 +537,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -537,7 +577,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set/Bundle beginnings, Pattern view" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename api files, fix _header, make work on server as well as local" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -556,45 +596,118 @@
     <MESSAGE value="data filled for first batch, browse spiffied" />
     <MESSAGE value="dokujoli deleted test" />
     <MESSAGE value="Set/Bundle beginnings, Pattern view" />
+    <MESSAGE value="more patterns and bundles, pattern and bundle view work, learn and contact tabs removed. ready for upload to site?" />
+    <MESSAGE value="rename api files, fix _header, make work on server as well as local" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/Entity/Bundle.php">
+    <entry file="file://$PROJECT_DIR$/application/views/HomeView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
+        <state line="19" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/header.css">
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="4" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+        <state line="17" column="22" selection-start="636" selection-end="636" vertical-scroll-proportion="0.27324915">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/_FooterView.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Pattern_Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+        <state line="72" column="17" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/page-pattern.combined.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/page-pattern.combined.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="15" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pattern.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="24" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1360437972000" expanded="true" signature="63:221" placeholder="..." />
-            <marker date="1360437972000" expanded="true" signature="95:210" placeholder="..." />
-            <marker date="1360437972000" expanded="true" signature="276:906" placeholder="..." />
-            <marker date="1360437972000" expanded="true" signature="1042:1344" placeholder="..." />
+            <marker date="1360557976000" expanded="true" signature="986:1015" placeholder="{...}" />
+            <marker date="1360557976000" expanded="true" signature="1040:1070" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/page-home.combined.js">
+    <entry file="file://$PROJECT_DIR$/application/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/_HeaderView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="3128" selection-end="3274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="669" column="43" selection-start="23771" selection-end="23771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="78" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Browse_Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="1" selection-start="0" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/BrowseView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="30" selection-start="0" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Render.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="9" selection-start="4153" selection-end="4153" vertical-scroll-proportion="0.0">
+        <state line="115" column="45" selection-start="4652" selection-end="4652" vertical-scroll-proportion="0.6057692">
           <folding>
             <marker date="1360438318000" expanded="true" signature="1093:1367" placeholder="..." />
             <marker date="1360438318000" expanded="true" signature="1124:1259" placeholder="..." />
@@ -607,99 +720,6 @@
             <marker date="1360438318000" expanded="true" signature="3133:3406" placeholder="..." />
             <marker date="1360438318000" expanded="true" signature="3164:3298" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Pattern_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="61" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/BrowseView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/Format.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="62" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1360443762000" expanded="false" signature="4600:4627" placeholder="..." />
-            <marker date="1360443762000" expanded="false" signature="4658:4688" placeholder="..." />
-            <marker date="1360443762000" expanded="false" signature="4864:4880" placeholder="..." />
-            <marker date="1360443762000" expanded="false" signature="4911:4921" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/templates/BrowsePattern.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="50" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Set_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="61" selection-start="1608" selection-end="1608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/Resource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="7" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/page-set.combined.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="18" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/SetView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1360445844000" expanded="true" signature="1365:1941" placeholder="..." />
-            <marker date="1360445844000" expanded="true" signature="1397:1928" placeholder="..." />
-            <marker date="1360445844000" expanded="true" signature="1456:1671" placeholder="..." />
-            <marker date="1360445844000" expanded="true" signature="1493:1658" placeholder="..." />
-            <marker date="1360445844000" expanded="true" signature="1530:1642" placeholder="..." />
-            <marker date="1360445844000" expanded="true" signature="1704:1914" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/PatternView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/HomeView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1360438146000" expanded="true" signature="72:524" placeholder="..." />
-            <marker date="1360438146000" expanded="true" signature="101:516" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/_HeaderView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="45" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.45687646">
-          <folding />
         </state>
       </provider>
     </entry>

@@ -11,8 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 	
-	<?php //$this->config->item('base_url') ?>
-    <base href="/lq/"/>
+	<?= getenv('HTTP_HOST') == 'localhost' ? '<base href="/lq/"/>' : '<base href="/"/>'; ?>
 	
     <link rel="stylesheet" href="css/page-<?=$this->pageName?>.combined.css">
 	<link rel="shortcut icon" href="favicon.ico">
