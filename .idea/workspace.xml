@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e586ea5-e833-4d0b-9d07-2007b527112b" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_v1_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
-      <change type="MOVED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_v1_PatternTypes_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" />
-      <change type="MOVED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_v1_Patterns_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" />
-      <change type="MOVED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_v1_Users_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" />
+      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_PatternTypes_Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Patterns_Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Users_Controller.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" afterPath="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php" />
     </list>
     <ignored path="lq.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,34 +38,16 @@
       <file leaf-file-name="_HeaderView.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/_HeaderView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
+            <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-0.56">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="3128" selection-end="3274" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api_V1_Controller.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="58" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.6233766">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api_V1_Patterns_Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="465" selection-end="465" vertical-scroll-proportion="-3.92">
+            <state line="95" column="0" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.22451317">
               <folding />
             </state>
           </provider>
@@ -113,24 +91,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Api_V1_PatternTypes_Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="447" selection-end="447" vertical-scroll-proportion="-5.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api_V1_Users_Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="22" selection-start="637" selection-end="637" vertical-scroll-proportion="-9.52">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pattern.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/pattern.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -167,9 +127,9 @@
         <option value="$PROJECT_DIR$/css/pattern.css" />
         <option value="$PROJECT_DIR$/application/views/_HeaderView.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
         <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_v1_Patterns_Controller.php" />
         <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_v1_Controller.php" />
+        <option value="$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php" />
       </list>
     </option>
   </component>
@@ -510,7 +470,11 @@
       <created>1360448748712</created>
       <updated>1360448748712</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="rename api files, fix _header, make work on server as well as local">
+      <created>1363204015661</created>
+      <updated>1363204015661</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -547,7 +511,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -661,14 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/_HeaderView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="3128" selection-end="3274" vertical-scroll-proportion="0.0">
+        <state line="28" column="35" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-0.56">
           <folding />
         </state>
       </provider>
@@ -705,30 +662,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_PatternTypes_Controller.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="447" selection-end="447" vertical-scroll-proportion="-5.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Users_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="637" selection-end="637" vertical-scroll-proportion="-9.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Patterns_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="465" selection-end="465" vertical-scroll-proportion="-3.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/api/v1/Api_V1_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="58" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.6233766">
+        <state line="95" column="0" selection-start="3592" selection-end="3592" vertical-scroll-proportion="0.22451317">
           <folding />
         </state>
       </provider>

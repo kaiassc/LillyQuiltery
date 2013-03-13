@@ -5,10 +5,10 @@ if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQU
 	//die('<p style="font-size: 24px; margin: 20px 10px 20px 10px;">Please don\'t try to hurt our site... : (</p>');
 }
 
-require_once('application/controllers/api/v1/Api_V1_Controller.php');
+require_once('application/controllers/api/v1/Api_v1_Controller.php');
 
-class Api_V1_Users_Controller extends Api_V1_Controller {
-	
+class Api_v1_Users_Controller extends Api_v1_Controller {
+
 	protected static $TABLE = 'PatternType';
 	protected static $TABLE_ABBREVIATION = 'pt';
 

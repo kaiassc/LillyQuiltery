@@ -7,12 +7,12 @@ if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQU
 
 require_once('application/core/RESTController.php');
 
-class Api_V1_Controller extends RESTController {
-	
+class Api_v1_Controller extends RESTController {
+
 	protected static $MAX_LIMIT = 50;
 	
 	protected static $WHERE_FIELDS = array();
-	
+
 	/** 
 	 * Example: $GET_FIELDS
 	 * 
@@ -290,7 +290,7 @@ class Api_V1_Controller extends RESTController {
 
 			if (isset($config['foreignAPI'])) {
 				$foreignObjects = array();
-				$foreignAPIClassName = "Api_V1_{$config['foreignAPI']}_Controller";
+				$foreignAPIClassName = "Api_v1_{$config['foreignAPI']}_Controller";
 
 				if (!class_exists($foreignAPIClassName, FALSE)) {
 					require_once(dirname(__FILE__)."/{$foreignAPIClassName}.php");
@@ -386,7 +386,7 @@ class Api_V1_Controller extends RESTController {
 						
 						$partialObjFields = explode(':', $partialObjFieldsString);
 						
-						$foreignAPIClassName = "Api_V1_{$className::$GET_FIELDS[$partialObjAlias]['foreignAPI']}_Controller";
+						$foreignAPIClassName = "Api_v1_{$className::$GET_FIELDS[$partialObjAlias]['foreignAPI']}_Controller";
 						if (!class_exists($foreignAPIClassName, FALSE)) {
 							require_once(dirname(__FILE__)."/{$foreignAPIClassName}.php");
 						}
@@ -466,7 +466,7 @@ class Api_V1_Controller extends RESTController {
 				$databaseField = $config['field'];
 
 				if (isset($config['foreignAPI'])) {
-					$foreignAPIClassName = "Api_V1_{$config['foreignAPI']}_Controller";
+					$foreignAPIClassName = "Api_v1_{$config['foreignAPI']}_Controller";
 					
 					if (!class_exists($foreignAPIClassName, FALSE)) {
 						require_once(dirname(__FILE__)."/{$foreignAPIClassName}.php");
@@ -633,7 +633,7 @@ class Api_V1_Controller extends RESTController {
 				}
 
 				if (isset($config['foreignAPI'])) {
-					$foreignAPIClassName = "Api_V1_{$config['foreignAPI']}_Controller";
+					$foreignAPIClassName = "Api_v1_{$config['foreignAPI']}_Controller";
 					if (!class_exists($foreignAPIClassName, FALSE)) {
 						require_once(dirname(__FILE__)."/{$foreignAPIClassName}.php");
 					}
@@ -667,7 +667,7 @@ class Api_V1_Controller extends RESTController {
 		foreach ($joins as $databaseField=>$config) {
 			$joinsString .= " {$config['joinDirection']} JOIN {$config['table']} {$config['tableAbbreviation']} ON {$tableAbbrv}.{$databaseField} = {$config['tableAbbreviation']}.ID";
 			
-			$foreignAPIClassName = "Api_V1_{$config['foreignAPI']}_Controller";
+			$foreignAPIClassName = "Api_v1_{$config['foreignAPI']}_Controller";
 
 			if (!class_exists($foreignAPIClassName, FALSE)) {
 				require_once(dirname(__FILE__)."/{$foreignAPIClassName}.php");
