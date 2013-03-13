@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e586ea5-e833-4d0b-9d07-2007b527112b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_PatternTypes_Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Patterns_Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Wamp\www\lq\application\controllers\api\v1\Api_V1_Users_Controller.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lq.iws" />
@@ -474,7 +470,11 @@
       <created>1363204015661</created>
       <updated>1363204015661</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="rename api files, fix _header, make work on server as well as local">
+      <created>1363204296514</created>
+      <updated>1363204296514</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
