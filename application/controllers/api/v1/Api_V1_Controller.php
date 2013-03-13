@@ -8,11 +8,11 @@ if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQU
 require_once('application/core/RESTController.php');
 
 class Api_V1_Controller extends RESTController {
-
+	
 	protected static $MAX_LIMIT = 50;
 	
 	protected static $WHERE_FIELDS = array();
-
+	
 	/** 
 	 * Example: $GET_FIELDS
 	 * 

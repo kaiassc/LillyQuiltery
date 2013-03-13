@@ -8,7 +8,7 @@ if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQU
 require_once('application/controllers/api/v1/Api_V1_Controller.php');
 
 class Api_V1_Users_Controller extends Api_V1_Controller {
-
+	
 	protected static $TABLE = 'User';
 	protected static $TABLE_ABBREVIATION = 'u';
 
